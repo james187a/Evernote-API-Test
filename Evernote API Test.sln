@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evernote API Test", "Evernote API Test\Evernote API Test.csproj", "{D3CD73D6-9CA7-4B5A-B7AE-FD8CD715DFBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{C9096DB4-2A4F-4953-A494-3DEB998BCBC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{515D50C7-76D8-489C-AD86-A866554F064E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{C92FD3D0-8AB9-4EF7-9564-9D34B8530F6A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\EvernoteAPITest.json = PublishScripts\Templates\EvernoteAPITest.json
+		PublishScripts\Templates\EvernoteAPITest.param.dev.json = PublishScripts\Templates\EvernoteAPITest.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncOAuth.Evernote.Simple", "..\AysncOAuth.Evernote.Simple.SampleMVC\AsyncOAuth.Evernote.Simple\AsyncOAuth.Evernote.Simple.csproj", "{682ED782-0FD3-44B8-861A-39E601EF9FC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3CD73D6-9CA7-4B5A-B7AE-FD8CD715DFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CD73D6-9CA7-4B5A-B7AE-FD8CD715DFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CD73D6-9CA7-4B5A-B7AE-FD8CD715DFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CD73D6-9CA7-4B5A-B7AE-FD8CD715DFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682ED782-0FD3-44B8-861A-39E601EF9FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682ED782-0FD3-44B8-861A-39E601EF9FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682ED782-0FD3-44B8-861A-39E601EF9FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682ED782-0FD3-44B8-861A-39E601EF9FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{515D50C7-76D8-489C-AD86-A866554F064E} = {C9096DB4-2A4F-4953-A494-3DEB998BCBC9}
+		{C92FD3D0-8AB9-4EF7-9564-9D34B8530F6A} = {C9096DB4-2A4F-4953-A494-3DEB998BCBC9}
+	EndGlobalSection
+EndGlobal
